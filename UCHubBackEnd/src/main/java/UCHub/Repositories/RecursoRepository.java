@@ -4,6 +4,6 @@ import org.springframework.data.repository.CrudRepository;
 
 import UCHub.Models.RecursoModel;
 
-public interface RecursoRepository extends CrudRepository<RecursoModel, Integer>{
+public interface RecursoRepository extends CrudRepository<RecursoModel, Long>{
 
 }
