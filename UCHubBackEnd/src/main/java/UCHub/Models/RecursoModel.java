@@ -60,10 +60,10 @@ public class RecursoModel {
     }
 
     /**
-     * @param numLikes the numLikes to set
+     * Gives a like
      */
-    public void setNumLikes(int numLikes) {
-        this.numLikes = numLikes;
+    public void giveLike() {
+        this.numLikes += 1 ;
     }
 
     /**
@@ -74,10 +74,10 @@ public class RecursoModel {
     }
 
     /**
-     * @param numConsultas the numConsultas to set
+     * when the resource is seen
      */
-    public void setNumConsultas(int numConsultas) {
-        this.numConsultas = numConsultas;
+    public void seen() {
+        this.numConsultas += 1 ;
     }
 
     /**

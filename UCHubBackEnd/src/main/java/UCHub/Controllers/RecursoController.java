@@ -36,13 +36,45 @@ public class RecursoController {
 
     @GetMapping("/{id}")
     public @ResponseBody RecursoModel getRecurso(@PathVariable( value = "id" ) String id){
-        Optional<RecursoModel> student = recursoRepository.findById(Long.parseLong(id));
+        Optional<RecursoModel> recurso = recursoRepository.findById(Long.parseLong(id));
 
-        if(!student.isPresent()){
+        if(!recurso.isPresent()){
             return new RecursoModel();
         }
 
-        return student.get();
+        return recurso.get();
     }
 
+    @PutMapping("/{id}/like")
+    public @ResponseBody RecursoModel giveLike(@PathVariable( value = "id") String id,
+                                               @RequestBody Map<String, String> body) {
+
+//      User is needed
+        if(!body.containsKey("userId"))
+            return new RecursoModel();
+
+        Optional<RecursoModel> r = recursoRepository.findById(Long.parseLong(id));
+
+        if(!r.isPresent())
+            return new RecursoModel();
+
+        r.get().giveLike();
+
+        recursoRepository.save(r.get());
+        return r.get();
+    }
+
+    @PutMapping("/{id}/seen")
+    public @ResponseBody RecursoModel resourceSeen(@PathVariable( value = "id") String id){
+        Optional<RecursoModel> r = recursoRepository.findById(Long.parseLong(id));
+
+        if(!r.isPresent())
+            return new RecursoModel();
+
+        r.get().seen();
+
+        recursoRepository.save(r.get());
+
+        return r.get();
+    }
 }

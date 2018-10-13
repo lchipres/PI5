@@ -1,7 +1,6 @@
 package UCHub.Controllers;
 
 import java.util.Map;
-import java.util.Optional;
 import java.util.Random;
 
 import UCHub.Models.UsuarioModel;
@@ -46,4 +45,20 @@ public class UsuarioController {
         return newU;
     }
 
+//    PUT an user
+    @PutMapping(path="/{cuenta}")
+    public @ResponseBody UsuarioModel updateUser(@RequestBody Map<String, String> body,
+                                                 @PathVariable(value = "cuenta") String cuenta){
+        UsuarioModel u = usuarioRepository.findByCuenta(Long.parseLong(cuenta));
+
+        u.setCarrera(body.get("career"));
+        u.setNombre(body.get("name"));
+        u.setCorreo(body.get("email"));
+        u.setUsuario(body.get("user"));
+        u.setContrasena(body.get("password"));
+
+        usuarioRepository.save(u);
+
+        return u;
+    }
 }
