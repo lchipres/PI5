@@ -13,5 +13,7 @@ public interface RecursoRepository extends CrudRepository<RecursoModel, Long>{
     List<RecursoModel> findRecursoModelsByFormatoEquals(String format);
     List<RecursoModel> findRecursoModelsByCategoriaContaining(String category);
     List<RecursoModel> findRecursoModelsByNombreContaining(String name);
+    List<RecursoModel> findRecursoModelsByOrderByNumConsultasDesc();
+    List<RecursoModel> findRecursoModelsByOrderByNumLikesDesc();
 
 }

@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d592c7c4-ac96-4f4c-9cc3-8acc3ee2ccba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UCHub/Controllers/RecursoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UCHub/Controllers/RecursoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UCHub/Controllers/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UCHub/Controllers/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UCHub/Models/RecursoModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UCHub/Models/RecursoModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UCHub/Repositories/RecursoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UCHub/Repositories/RecursoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UCHub/Repositories/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UCHub/Repositories/UsuarioRepository.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -72,7 +68,7 @@
           <entry key="class" value="2" />
           <entry key="html" value="3" />
           <entry key="iml" value="1" />
-          <entry key="java" value="48" />
+          <entry key="java" value="49" />
           <entry key="properties" value="3" />
           <entry key="recurso_model" value="11" />
           <entry key="sql" value="4" />
@@ -86,7 +82,7 @@
           <entry key="Database Element" value="15" />
           <entry key="HTML" value="3" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="48" />
+          <entry key="JAVA" value="49" />
           <entry key="Properties" value="3" />
           <entry key="Scratch" value="4" />
           <entry key="XML" value="7" />
@@ -96,7 +92,7 @@
         <counts>
           <entry key="dummy" value="20" />
           <entry key="html" value="71" />
-          <entry key="java" value="6283" />
+          <entry key="java" value="7288" />
           <entry key="properties" value="333" />
           <entry key="sql" value="36" />
           <entry key="txt" value="5" />
@@ -106,7 +102,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="71" />
-          <entry key="JAVA" value="6283" />
+          <entry key="JAVA" value="7288" />
           <entry key="PLAIN_TEXT" value="25" />
           <entry key="Properties" value="333" />
           <entry key="Scratch" value="36" />
@@ -117,23 +113,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Models/RecursoModel.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Controllers/RecursoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="79" column="30" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
+            <state relative-caret-position="144">
+              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#585#586#0" expanded="true" />
+                <element signature="e#635#636#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Controllers/RecursoController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Repositories/RecursoRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
+            <state relative-caret-position="273">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -169,10 +169,10 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ac11635e-f2ab-4c6b-ba15-7b86824241c1/console.sql" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/UCHub/Repositories/RecursoRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/UCHub/Controllers/UsuarioController.java" />
         <option value="$PROJECT_DIR$/src/main/java/UCHub/Repositories/UsuarioRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/UCHub/Models/RecursoModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/UCHub/Repositories/RecursoRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/UCHub/Controllers/RecursoController.java" />
       </list>
     </option>
@@ -295,7 +295,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/gamez/PI5/UCHubBackEnd/src/main/java/UCHub/Models/UsuarioModel.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539401873334" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539403701573" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -357,16 +357,15 @@
       <workItem from="1539360335981" duration="1145000" />
       <workItem from="1539363908814" duration="103000" />
       <workItem from="1539364114532" duration="2360000" />
-      <workItem from="1539392749623" duration="6758000" />
+      <workItem from="1539392749623" duration="8688000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40985000" />
+    <option name="totallyTimeSpent" value="42915000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="0" width="1366" height="768" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49612403" visible="true" weight="0.22960725" />
       <window_info id="Structure" order="1" sideWeight="0.503876" side_tool="true" weight="0.2265861" />
@@ -378,7 +377,7 @@
       <window_info id="Web" order="7" sideWeight="0.500821" side_tool="true" weight="0.21148036" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32840723" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946752" weight="0.36310396" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946752" visible="true" weight="0.36310396" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -504,16 +503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Repositories/RecursoRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="78" lean-forward="true" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.10.RELEASE/spring-data-commons-2.0.10.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
@@ -523,8 +512,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Models/RecursoModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
+        <state relative-caret-position="31">
           <caret line="79" column="30" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Repositories/RecursoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -533,8 +532,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Controllers/RecursoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
+        <state relative-caret-position="144">
+          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+          <folding>
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
