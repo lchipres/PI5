@@ -6,9 +6,10 @@ import org.springframework.data.repository.CrudRepository;
 import UCHub.Models.UsuarioModel;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface UsuarioRepository extends CrudRepository<UsuarioModel, Long>{
-    UsuarioModel findByCuenta(long accountNumber);
+    Optional<UsuarioModel> findByCuenta(long accountNumber);
 
     boolean existsUsuarioModelById(ID primarKey);
     boolean existsUsuarioModelByCuenta(long cuenta);

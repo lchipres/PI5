@@ -1307,135 +1307,268 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="327" parent="4" name="hibernate_sequence">
+    <table id="327" parent="4" name="comentario_model">
       <Engine>MyISAM</Engine>
     </table>
-    <table id="328" parent="4" name="recurso_model">
+    <table id="328" parent="4" name="consulta_modelo">
       <Engine>MyISAM</Engine>
     </table>
-    <table id="329" parent="4" name="usuario_model">
+    <table id="329" parent="4" name="etiqueta_model">
       <Engine>MyISAM</Engine>
     </table>
-    <column id="330" parent="327" name="next_val">
-      <Position>1</Position>
-      <DataType>bigint(20)|0s</DataType>
-      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="331" parent="328" name="id">
+    <table id="330" parent="4" name="hibernate_sequence">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="331" parent="4" name="recurso_model">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="332" parent="4" name="usuario_model">
+      <Engine>MyISAM</Engine>
+    </table>
+    <column id="333" parent="327" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="332" parent="328" name="autor">
+    <column id="334" parent="327" name="contenido">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="333" parent="328" name="categoria">
+    <column id="335" parent="327" name="fecha_publicacion">
+      <Position>3</Position>
+      <DataType>datetime|0s</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="336" parent="327" name="usuario_id">
+      <Position>4</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="337" parent="327" name="recurso_id">
+      <Position>5</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="338" parent="327" name="FKp62iyjv9vbqd6eqf1dj7xe5ua">
+      <ColNames>usuario_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="339" parent="327" name="FK1ac1ngc5bsse7c5r4lwm02pm4">
+      <ColNames>recurso_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="340" parent="327" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="341" parent="328" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="342" parent="328" name="comentarios">
+      <Position>2</Position>
+      <DataType>tinyblob|0s</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="343" parent="328" name="etiquetas">
+      <Position>3</Position>
+      <DataType>tinyblob|0s</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="344" parent="328" name="num_consultas">
+      <Position>4</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="345" parent="328" name="num_likes">
+      <Position>5</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="346" parent="328" name="recurso_id">
+      <Position>6</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="347" parent="328" name="usuario_id">
+      <Position>7</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="348" parent="328" name="FKhncp2gkaxf1i5wlcxqx2uvven">
+      <ColNames>recurso_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="349" parent="328" name="FK75fcdm3wvnxg34fajiwfemfvc">
+      <ColNames>usuario_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="350" parent="328" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="351" parent="329" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="352" parent="329" name="nombre">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="353" parent="329" name="UK_8lf3ynttj3jp7c8m3rw0pv9wg">
+      <ColNames>nombre</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="354" parent="329" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="355" parent="329" name="UK_8lf3ynttj3jp7c8m3rw0pv9wg">
+      <ColNames>nombre</ColNames>
+      <UnderlyingIndexName>UK_8lf3ynttj3jp7c8m3rw0pv9wg</UnderlyingIndexName>
+    </key>
+    <column id="356" parent="330" name="next_val">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="357" parent="331" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="358" parent="331" name="autor">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="359" parent="331" name="categoria">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="334" parent="328" name="descripcion">
+    <column id="360" parent="331" name="descripcion">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="335" parent="328" name="edicion">
+    <column id="361" parent="331" name="edicion">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="336" parent="328" name="etiquetas">
+    <column id="362" parent="331" name="etiquetas">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="337" parent="328" name="formato">
+    <column id="363" parent="331" name="formato">
       <Position>7</Position>
       <DataType>varchar(255)|0s</DataType>
       <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="338" parent="328" name="nombre">
+    <column id="364" parent="331" name="nombre">
       <Position>8</Position>
       <DataType>varchar(255)|0s</DataType>
       <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="339" parent="328" name="num_consultas">
+    <column id="365" parent="331" name="num_consultas">
       <Position>9</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="340" parent="328" name="num_likes">
+    <column id="366" parent="331" name="num_likes">
       <Position>10</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="341" parent="328" name="PRIMARY">
+    <key id="367" parent="331" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="342" parent="329" name="id">
+    <column id="368" parent="332" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="343" parent="329" name="carrera">
+    <column id="369" parent="332" name="carrera">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="344" parent="329" name="contrasena">
+    <column id="370" parent="332" name="contrasena">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="345" parent="329" name="correo">
+    <column id="371" parent="332" name="correo">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="346" parent="329" name="cuenta">
+    <column id="372" parent="332" name="cuenta">
       <Position>5</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="347" parent="329" name="nombre">
+    <column id="373" parent="332" name="nombre">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="348" parent="329" name="tipo">
+    <column id="374" parent="332" name="tipo">
       <Position>7</Position>
       <DataType>varchar(255)|0s</DataType>
       <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="349" parent="329" name="usuario">
+    <column id="375" parent="332" name="usuario">
       <Position>8</Position>
       <DataType>varchar(255)|0s</DataType>
       <DefaultExpression>&apos;NULL&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="350" parent="329" name="PRIMARY">
+    <key id="376" parent="332" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

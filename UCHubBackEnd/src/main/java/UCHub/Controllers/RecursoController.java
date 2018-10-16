@@ -1,11 +1,12 @@
 package UCHub.Controllers;
 
-import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
+// import UCHub.Models.ComentarioModel;
+import UCHub.Models.ComentarioModel;
 import UCHub.Models.RecursoModel;
-import org.springframework.boot.autoconfigure.jersey.ResourceConfigCustomizer;
+import UCHub.Models.UsuarioModel;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -14,11 +15,17 @@ import org.springframework.stereotype.Controller;
 // UCHub.Models
 import UCHub.Repositories.*;
 
+import javax.swing.text.html.Option;
+
 @Controller
 @RequestMapping(path="/recursos")
 public class RecursoController {
     @Autowired
     private RecursoRepository recursoRepository;
+    @Autowired
+    private ComentarioRepository comentarioRepository;
+    @Autowired
+    private UsuarioRepository usuarioRepository;
 
 //    GET all the resources
     @GetMapping(path="/")
@@ -107,5 +114,51 @@ public class RecursoController {
         return recursoRepository.findAll();
     }
 
+//  Modify a resource
+    @PutMapping("/{id}")
+    public @ResponseBody RecursoModel updateAResource(@RequestBody Map<String, String> map,
+                                                      @PathVariable( value = "id" ) String id){
+        // Get the resource by id
+        Optional<RecursoModel> resource = recursoRepository.findById(Long.parseLong(id));
+
+        if(!resource.isPresent())
+            return new RecursoModel();
+
+        resource.get().setAutor(map.get("autor"));
+        resource.get().setCategoria(map.get("categoria"));
+        resource.get().setDescripcion(map.get("descripcion"));
+        resource.get().setEdicion(map.get("edicion"));
+        resource.get().setEtiquetas(map.get("etiquetas"));
+        resource.get().setFormato(map.get("formato"));
+        resource.get().setNombre(map.get("nombre"));
+
+        recursoRepository.save(resource.get());
+
+        return resource.get();
+    }
+
+    @PostMapping("/{recursoID}/comentarios/")
+    public @ResponseBody ComentarioModel newComment(@PathVariable String recursoID,
+                                                    @RequestBody Map<String, String> body){
+        Optional<RecursoModel> recurso = recursoRepository.findById(Long.parseLong(recursoID));
+
+        if(recurso.isPresent()){
+            if( body.containsKey("cuentaUsuario") ){
+                Optional<UsuarioModel> usuario =
+                        usuarioRepository.findByCuenta(Long.parseLong(body.get("cuentaUsuario")));
+
+                if(usuario.isPresent()){
+                    ComentarioModel nuevoComentario = new ComentarioModel(recurso.get(), usuario.get(), body.get("contenido"));
+
+                    comentarioRepository.save(nuevoComentario);
+
+                    return nuevoComentario;
+                }
+            }
+        }
+
+
+        return new ComentarioModel();
+    }
 
 }

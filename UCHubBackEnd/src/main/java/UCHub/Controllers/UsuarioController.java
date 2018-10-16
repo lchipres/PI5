@@ -1,6 +1,7 @@
 package UCHub.Controllers;
 
 import java.util.Map;
+import java.util.Optional;
 import java.util.Random;
 
 import UCHub.Models.UsuarioModel;
@@ -27,7 +28,7 @@ public class UsuarioController {
 //    GET user by cuenta
     @GetMapping(path="/{cuenta}")
     public @ResponseBody UsuarioModel getUser(@PathVariable(value = "cuenta") String cuenta){
-        return  usuarioRepository.findByCuenta(Long.parseLong(cuenta));
+        return  usuarioRepository.findByCuenta(Long.parseLong(cuenta)).get();
     }
 
 //    POST a new Usuario
@@ -35,7 +36,7 @@ public class UsuarioController {
     public @ResponseBody UsuarioModel addNewUsuario(@RequestBody Map<String, String> body){
         long cuenta = r.nextInt((99999999 - 10000000)+ 1) + 10000000;
 
-        UsuarioModel u = usuarioRepository.findByCuenta(cuenta);
+        Optional<UsuarioModel> u = usuarioRepository.findByCuenta(cuenta);
         if(u != null)
             cuenta =  r.nextInt((99999999 - 10000000)+ 1) + 10000000;
 
@@ -49,16 +50,19 @@ public class UsuarioController {
     @PutMapping(path="/{cuenta}")
     public @ResponseBody UsuarioModel updateUser(@RequestBody Map<String, String> body,
                                                  @PathVariable(value = "cuenta") String cuenta){
-        UsuarioModel u = usuarioRepository.findByCuenta(Long.parseLong(cuenta));
+        Optional<UsuarioModel> u = usuarioRepository.findByCuenta(Long.parseLong(cuenta));
 
-        u.setCarrera(body.get("career"));
-        u.setNombre(body.get("name"));
-        u.setCorreo(body.get("email"));
-        u.setUsuario(body.get("user"));
-        u.setContrasena(body.get("password"));
+        if (!u.isPresent())
+            return new UsuarioModel();
 
-        usuarioRepository.save(u);
+        u.get().setCarrera(body.get("career"));
+        u.get().setNombre(body.get("name"));
+        u.get().setCorreo(body.get("email"));
+        u.get().setUsuario(body.get("user"));
+        u.get().setContrasena(body.get("password"));
 
-        return u;
+        usuarioRepository.save(u.get());
+
+        return u.get();
     }
 }

@@ -1,11 +1,13 @@
 package UCHub.Models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
+import javax.persistence.*;
+import java.util.List;
+import java.util.Set;
 
 @Entity
+@Table( name = "recurso_model" )
 public class RecursoModel {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
@@ -19,6 +21,10 @@ public class RecursoModel {
     private String edicion;
     private String etiquetas;
     private String descripcion;
+
+    @OneToMany(mappedBy = "recurso", cascade = CascadeType.ALL)
+    @JsonManagedReference
+    private List<ComentarioModel> comentarios;
 
     public RecursoModel() {
         this.numLikes = -1;
@@ -177,4 +183,12 @@ public class RecursoModel {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
+
+     public List<ComentarioModel> getComentarios(){
+         return this.comentarios;
+     }
+
+     public void setComentarios(List<ComentarioModel> comentarios){
+         this.comentarios = comentarios;
+     }
 }

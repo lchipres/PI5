@@ -32,7 +32,6 @@ public class UsuarioModel {
 
     public UsuarioModel(long cuenta, String nombre, String carrera, String correo, String usuario, String contrasena, String tipo) {
         this.cuenta = cuenta;
-//        this.cuenta = r.nextInt((99999999 - 10000000)+ 1) + 10000000;
         this.nombre = nombre;
         this.carrera = carrera;
         this.correo = correo;
