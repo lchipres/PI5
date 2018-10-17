@@ -20,14 +20,7 @@ public class UsuarioModel {
     private String tipo;
 
     public UsuarioModel() {
-        this.id = 0;
-        this.cuenta = 0;
-        this.nombre = "";
-        this.carrera = "";
-        this.correo = "";
-        this.usuario = "";
-        this.contrasena = "";
-        this.tipo = "";
+
     }
 
     public UsuarioModel(long cuenta, String nombre, String carrera, String correo, String usuario, String contrasena, String tipo) {

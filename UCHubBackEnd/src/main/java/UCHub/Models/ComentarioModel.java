@@ -28,9 +28,6 @@ public class ComentarioModel {
     private String contenido;
 
     public ComentarioModel(){
-        this.setId(0);
-        this.setUsuario(new UsuarioModel());
-        this.setContenido("");
     }
 
     public ComentarioModel(RecursoModel r, UsuarioModel u, String contenido){

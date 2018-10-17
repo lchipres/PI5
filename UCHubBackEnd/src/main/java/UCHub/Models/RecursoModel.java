@@ -27,15 +27,6 @@ public class RecursoModel {
     private List<ComentarioModel> comentarios;
 
     public RecursoModel() {
-        this.numLikes = -1;
-        this.numConsultas = -1;
-        this.categoria = "";
-        this.formato = "";
-        this.nombre = "";
-        this.autor = "";
-        this.edicion = "";
-        this.etiquetas = "";
-        this.descripcion = "";
     }
 
     public RecursoModel(int numLikes, int numConsultas, String categoria, String formato, String nombre,

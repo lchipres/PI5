@@ -1,14 +1,18 @@
 package UCHub.Models;
 
 import javax.persistence.*;
+import java.awt.*;
+import java.util.Date;
+import java.util.Calendar;
 
 @Entity
 public class ConsultaModelo {
     @Id
     @GeneratedValue(strategy =  GenerationType.AUTO)
     private int id;
-    private int numLikes;
-    private int numConsultas;
+    private Date fecha;
+//    private int numLikes;
+//    private int numConsultas;
 
     @ManyToOne
     @JoinColumn(name = "recurso_id")
@@ -16,46 +20,34 @@ public class ConsultaModelo {
 
     @ManyToOne
     @JoinColumn(name = "usuario_id")
-
     private UsuarioModel usuario;
-    private int[] comentarios;
-    private int[] etiquetas;
 
     public ConsultaModelo() {
-        this.id = 0;
-        this.numLikes = -1;
-        this.numConsultas = -1;
-        this.recurso = new RecursoModel();
-        this.usuario = new UsuarioModel();
-        this.comentarios = new int[1];
-        this.etiquetas = new int[1];
     }
 
-    public ConsultaModelo(int numLikes, int numConsultas, RecursoModel idRecurso, UsuarioModel idUsuario,
-                          int[] comentarios, int[] etiquetas) {
+    public ConsultaModelo(RecursoModel idRecurso, UsuarioModel idUsuario) {
+        this.fecha = Calendar.getInstance().getTime();
         this.usuario = idUsuario;
-        this.numLikes = numLikes;
-        this.numConsultas = numConsultas;
+//        this.numLikes = numLikes;
+//        this.numConsultas = numConsultas;
         this.recurso = idRecurso;
-        this.comentarios = comentarios;
-        this.etiquetas = etiquetas;
     }
 
-    public int getNumLikes() {
-        return numLikes;
-    }
-
-    public void setNumLikes(int numLikes) {
-        this.numLikes = numLikes;
-    }
-
-    public int getNumConsultas() {
-        return numConsultas;
-    }
-
-    public void setNumConsultas(int numConsultas) {
-        this.numConsultas = numConsultas;
-    }
+//    public int getNumLikes() {
+//        return numLikes;
+//    }
+//
+//    public void setNumLikes(int numLikes) {
+//        this.numLikes = numLikes;
+//    }
+//
+//    public int getNumConsultas() {
+//        return numConsultas;
+//    }
+//
+//    public void setNumConsultas(int numConsultas) {
+//        this.numConsultas = numConsultas;
+//    }
 
     public RecursoModel getIdRecurso() {
         return recurso;
@@ -73,19 +65,11 @@ public class ConsultaModelo {
         this.usuario = idUsuario;
     }
 
-    public int[] getComentarios() {
-        return comentarios;
+    public Date getFecha() {
+        return fecha;
     }
 
-    public void setComentarios(int[] comentarios) {
-        this.comentarios = comentarios;
-    }
-
-    public int[] getEtiquetas() {
-        return etiquetas;
-    }
-
-    public void setEtiquetas(int[] etiquetas) {
-        this.etiquetas = etiquetas;
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
     }
 }

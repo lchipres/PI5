@@ -137,6 +137,7 @@ public class RecursoController {
         return resource.get();
     }
 
+//    Comment into a resource
     @PostMapping("/{recursoID}/comentarios/")
     public @ResponseBody ComentarioModel newComment(@PathVariable String recursoID,
                                                     @RequestBody Map<String, String> body){
@@ -146,18 +147,14 @@ public class RecursoController {
             if( body.containsKey("cuentaUsuario") ){
                 Optional<UsuarioModel> usuario =
                         usuarioRepository.findByCuenta(Long.parseLong(body.get("cuentaUsuario")));
-
                 if(usuario.isPresent()){
-                    ComentarioModel nuevoComentario = new ComentarioModel(recurso.get(), usuario.get(), body.get("contenido"));
-
+                    ComentarioModel nuevoComentario =
+                            new ComentarioModel(recurso.get(), usuario.get(), body.get("contenido"));
                     comentarioRepository.save(nuevoComentario);
-
                     return nuevoComentario;
                 }
             }
         }
-
-
         return new ComentarioModel();
     }
 
