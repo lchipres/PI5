@@ -52,6 +52,9 @@ public class RecursoController {
             return new RecursoModel();
         }
 
+        recurso.get().seen();
+        recursoRepository.save(recurso.get());
+
         return recurso.get();
     }
 
