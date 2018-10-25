@@ -8,6 +8,10 @@ public class Auth {
         return (logged.getUsuario().equals(fromDB.getUsuario()) && logged.getContrasena().equals(fromDB.getContrasena()));
     }
 
+    public static Boolean authUser(UsuarioModel logged, String account, String password){
+        return (logged.getCuenta() == Long.parseLong(account) && logged.getContrasena().equals(password));
+    }
+
     public static Boolean canModifyResource(UsuarioModel logged, UsuarioModel fromDB) {
         return (logged.getUsuario().equals(fromDB.getUsuario()) &&
                 logged.getContrasena().equals(fromDB.getContrasena()) &&

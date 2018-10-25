@@ -65,7 +65,7 @@ public class RecursoController {
 
 //      User is needed
         if(!body.containsKey("userId"))
-            return new RecursoModel();
+            return null;
 
         Optional<RecursoModel> r = recursoRepository.findById(Long.parseLong(id));
 
@@ -142,7 +142,7 @@ public class RecursoController {
 
 //    Comment into a resource
     @PostMapping("/{recursoID}/comentarios/")
-    public @ResponseBody ComentarioModel newComment(@PathVariable String recursoID,
+    public @ResponseBody RecursoModel newComment(@PathVariable String recursoID,
                                                     @RequestBody Map<String, String> body){
         Optional<RecursoModel> recurso = recursoRepository.findById(Long.parseLong(recursoID));
 
@@ -154,11 +154,17 @@ public class RecursoController {
                     ComentarioModel nuevoComentario =
                             new ComentarioModel(recurso.get(), usuario.get(), body.get("contenido"));
                     comentarioRepository.save(nuevoComentario);
-                    return nuevoComentario;
+
+                    Optional<RecursoModel> r = recursoRepository.findById(Long.parseLong(recursoID));
+
+                   if(!r.isPresent())
+                       return null;
+
+                    return r.get();
                 }
             }
         }
-        return new ComentarioModel();
+        return null;
     }
 
 }

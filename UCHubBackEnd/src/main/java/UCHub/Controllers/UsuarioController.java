@@ -5,6 +5,7 @@ import java.util.Optional;
 import java.util.Random;
 
 import UCHub.Models.UsuarioModel;
+import UCHub.helpers.Auth;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -29,6 +30,20 @@ public class UsuarioController {
     @GetMapping(path="/{cuenta}")
     public @ResponseBody UsuarioModel getUser(@PathVariable(value = "cuenta") String cuenta){
         return  usuarioRepository.findByCuenta(Long.parseLong(cuenta)).get();
+    }
+
+    @PostMapping(path="/{cuenta}/login/")
+    public @ResponseBody UsuarioModel login(@PathVariable(value="cuenta") String cuenta,
+                                       @RequestBody Map<String, String> body){
+        Optional<UsuarioModel> user = usuarioRepository.findByCuenta(Long.parseLong(cuenta));
+
+        if(!user.isPresent())
+            return new UsuarioModel();
+
+        if( Auth.authUser(user.get(), body.get("cuenta"), body.get("password")) )
+            return user.get();
+        else
+            return new UsuarioModel();
     }
 
 //    POST a new Usuario
