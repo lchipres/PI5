@@ -49,13 +49,7 @@ public class UsuarioController {
 //    POST a new Usuario
     @PostMapping(path="/")
     public @ResponseBody UsuarioModel addNewUsuario(@RequestBody Map<String, String> body){
-        long cuenta = r.nextInt((99999999 - 10000000)+ 1) + 10000000;
-
-        Optional<UsuarioModel> u = usuarioRepository.findByCuenta(cuenta);
-        if(u != null)
-            cuenta =  r.nextInt((99999999 - 10000000)+ 1) + 10000000;
-
-        UsuarioModel newU = new UsuarioModel(cuenta, body.get("name"), body.get("career"), body.get("email"),
+        UsuarioModel newU = new UsuarioModel(Long.parseLong(body.get("cuenta")), body.get("name"), body.get("career"), body.get("email"),
                                             body.get("user"), body.get("password"), body.get("type"));
         usuarioRepository.save(newU);
         return newU;
