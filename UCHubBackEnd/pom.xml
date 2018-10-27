@@ -51,18 +51,6 @@
             <artifactId>sqljdbc4</artifactId>
             <version>4.0</version>
         </dependency>
-
-        <dependency>
-            <groupId>com.microsoft.azure</groupId>
-            <artifactId>azure-documentdb-spring-boot-starter</artifactId>
-            <version>0.1.4</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.microsoft.azure</groupId>
-            <artifactId>spring-azure-starter-storage</artifactId>
-            <version>1.0.0.M2</version>
-        </dependency>
     </dependencies>
 
     <properties>
