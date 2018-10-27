@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d592c7c4-ac96-4f4c-9cc3-8acc3ee2ccba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UCHub/Models/UsuarioModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UCHub/Models/UsuarioModel.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -115,7 +115,7 @@
           <entry key="cell" value="76" />
           <entry key="dummy" value="32" />
           <entry key="html" value="71" />
-          <entry key="java" value="14244" />
+          <entry key="java" value="14246" />
           <entry key="properties" value="354" />
           <entry key="sql" value="36" />
           <entry key="txt" value="5" />
@@ -125,7 +125,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="71" />
-          <entry key="JAVA" value="14244" />
+          <entry key="JAVA" value="14246" />
           <entry key="PLAIN_TEXT" value="37" />
           <entry key="Properties" value="354" />
           <entry key="Scratch" value="112" />
@@ -139,35 +139,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Controllers/UsuarioController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
+            <state relative-caret-position="676">
               <caret line="50" column="91" selection-start-line="50" selection-start-column="91" selection-end-line="50" selection-end-column="91" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Models/UsuarioModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-702">
-              <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            <state relative-caret-position="260">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -211,7 +193,6 @@
         <option value="$PROJECT_DIR$/src/main/java/UCHub/Controllers/ComentarioController.java" />
         <option value="$PROJECT_DIR$/src/main/java/UCHub/Repositories/ComentarioRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/UCHub/Repositories/UsuarioRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/UCHub/Models/UsuarioModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/UCHub/Models/ComentarioModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/UCHub/Models/RecursoModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/UCHub/Repositories/ConsultaRepository.java" />
@@ -228,6 +209,7 @@
         <option value="$PROJECT_DIR$/src/main/java/UCHub/Controllers/UsuarioController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/UCHub/Models/UsuarioModel.java" />
       </list>
     </option>
   </component>
@@ -440,12 +422,12 @@
       <workItem from="1540345334440" duration="1335000" />
       <workItem from="1540384039350" duration="2825000" />
       <workItem from="1540413931057" duration="3309000" />
-      <workItem from="1540650448594" duration="8263000" />
+      <workItem from="1540650448594" duration="8855000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125739000" />
+    <option name="totallyTimeSpent" value="126331000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -715,10 +697,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Controllers/UsuarioController.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="50" column="91" selection-start-line="50" selection-start-column="91" selection-end-line="50" selection-end-column="91" />
+        <state relative-caret-position="722">
+          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -729,20 +711,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Models/UsuarioModel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Controllers/UsuarioController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-702">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="676">
+          <caret line="50" column="91" selection-start-line="50" selection-start-column="91" selection-end-line="50" selection-end-column="91" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Models/UsuarioModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+        <state relative-caret-position="260">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
