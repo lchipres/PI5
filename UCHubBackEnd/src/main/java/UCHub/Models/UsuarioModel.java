@@ -8,7 +8,7 @@ import java.util.Random;
 
 @Entity
 public class UsuarioModel {
-    //@Id
+    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private long cuenta;
