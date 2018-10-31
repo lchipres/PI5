@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d592c7c4-ac96-4f4c-9cc3-8acc3ee2ccba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UCHub/Controllers/RepositorioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UCHub/Repositories/RepositorioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ac11635e-f2ab-4c6b-ba15-7b86824241c1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ac11635e-f2ab-4c6b-ba15-7b86824241c1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UCHub/Models/RecursoModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UCHub/Models/RecursoModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UCHub/Models/RepositorioModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UCHub/Models/RepositorioModel.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -93,10 +97,11 @@
           <entry key="etiqueta_model" value="3" />
           <entry key="html" value="3" />
           <entry key="iml" value="1" />
-          <entry key="java" value="147" />
+          <entry key="java" value="164" />
           <entry key="pom" value="1" />
           <entry key="properties" value="8" />
           <entry key="recurso_model" value="14" />
+          <entry key="repositorio_model" value="1" />
           <entry key="sql" value="8" />
           <entry key="usuario_model" value="8" />
           <entry key="xml" value="10" />
@@ -105,10 +110,10 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="Database Element" value="34" />
+          <entry key="Database Element" value="35" />
           <entry key="HTML" value="3" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="147" />
+          <entry key="JAVA" value="164" />
           <entry key="Properties" value="8" />
           <entry key="SQL" value="4" />
           <entry key="Scratch" value="4" />
@@ -120,7 +125,7 @@
           <entry key="cell" value="76" />
           <entry key="dummy" value="32" />
           <entry key="html" value="71" />
-          <entry key="java" value="14246" />
+          <entry key="java" value="16183" />
           <entry key="properties" value="356" />
           <entry key="sql" value="36" />
           <entry key="txt" value="5" />
@@ -130,7 +135,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="71" />
-          <entry key="JAVA" value="14246" />
+          <entry key="JAVA" value="16183" />
           <entry key="PLAIN_TEXT" value="37" />
           <entry key="Properties" value="356" />
           <entry key="Scratch" value="112" />
@@ -140,7 +145,84 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Controllers/UsuarioController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-78">
+              <caret line="50" column="91" selection-start-line="50" selection-start-column="91" selection-end-line="50" selection-end-column="91" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Models/RepositorioModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="71" column="19" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#634#635#0" expanded="true" />
+                <element signature="e#659#660#0" expanded="true" />
+                <element signature="e#693#694#0" expanded="true" />
+                <element signature="e#721#722#0" expanded="true" />
+                <element signature="e#754#755#0" expanded="true" />
+                <element signature="e#783#784#0" expanded="true" />
+                <element signature="e#827#828#0" expanded="true" />
+                <element signature="e#863#864#0" expanded="true" />
+                <element signature="e#901#902#0" expanded="true" />
+                <element signature="e#935#936#0" expanded="true" />
+                <element signature="e#989#990#0" expanded="true" />
+                <element signature="e#1035#1036#0" expanded="true" />
+                <element signature="e#1071#1072#0" expanded="true" />
+                <element signature="e#1103#1104#0" expanded="true" />
+                <element signature="e#1153#1154#0" expanded="true" />
+                <element signature="e#1195#1196#0" expanded="true" />
+                <element signature="e#1242#1243#0" expanded="true" />
+                <element signature="e#1273#1274#0" expanded="true" />
+                <element signature="e#1333#1334#0" expanded="true" />
+                <element signature="e#1373#1374#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Models/UsuarioModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Models/ComentarioModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="23" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Controllers/RepositorioController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#864#865#0" expanded="true" />
+                <element signature="e#907#908#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -177,7 +259,6 @@
         <option value="$PROJECT_DIR$/src/main/java/UCHub/Repositories/ComentarioRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/UCHub/Repositories/UsuarioRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/UCHub/Models/ComentarioModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/UCHub/Models/RecursoModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/UCHub/Repositories/ConsultaRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/UCHub/Controllers/ConsultaController.java" />
         <option value="$PROJECT_DIR$/src/main/java/UCHub/Models/ConsultaModelo.java" />
@@ -193,6 +274,10 @@
         <option value="$PROJECT_DIR$/src/main/java/UCHub/Models/UsuarioModel.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/UCHub/Repositories/RepositorioRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/UCHub/Models/RecursoModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/UCHub/Models/RepositorioModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/UCHub/Controllers/RepositorioController.java" />
       </list>
     </option>
   </component>
@@ -214,6 +299,20 @@
     <option name="y" value="-8" />
     <option name="width" value="1364" />
     <option name="height" value="736" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -320,16 +419,16 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="SearchEverywhereHistoryKey" value="Usuario&#9;null&#9;null&#10;ConsultaModel&#9;FILE&#9;file://C:/Users/gamez/PI5/UCHubBackEnd/src/main/java/UCHub/Models/ConsultaModelo.java&#10;Recurso&#9;FILE&#9;file://C:/Users/gamez/PI5/UCHubBackEnd/src/main/java/UCHub/Controllers/RecursoController.java&#10;ComentarioModel&#9;PSI&#9;JAVA://UCHub.Models.ComentarioModel&#10;UsuarioModel&#9;FILE&#9;file://C:/Users/gamez/PI5/UCHubBackEnd/src/main/java/UCHub/Models/UsuarioModel.java" />
+    <property name="SearchEverywhereHistoryKey" value="us&#9;FILE&#9;file://C:/Users/gamez/PI5/UCHubBackEnd/src/main/java/UCHub/Controllers/UsuarioController.java&#10;Repo&#9;FILE&#9;file://C:/Users/gamez/PI5/UCHubBackEnd/src/main/java/UCHub/Controllers/RepositorioController.java&#10;Usuario&#9;null&#9;null&#10;ConsultaModel&#9;FILE&#9;file://C:/Users/gamez/PI5/UCHubBackEnd/src/main/java/UCHub/Models/ConsultaModelo.java&#10;Recurso&#9;FILE&#9;file://C:/Users/gamez/PI5/UCHubBackEnd/src/main/java/UCHub/Controllers/RecursoController.java&#10;ComentarioModel&#9;PSI&#9;JAVA://UCHub.Models.ComentarioModel&#10;UsuarioModel&#9;FILE&#9;file://C:/Users/gamez/PI5/UCHubBackEnd/src/main/java/UCHub/Models/UsuarioModel.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540957921560" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540962658387" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -409,12 +508,12 @@
       <workItem from="1540694488680" duration="1228000" />
       <workItem from="1540737240977" duration="760000" />
       <workItem from="1540926984631" duration="1180000" />
-      <workItem from="1540929277191" duration="2137000" />
+      <workItem from="1540929277191" duration="6826000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134069000" />
+    <option name="totallyTimeSpent" value="138758000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -427,6 +526,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4968254" visible="true" weight="0.20058565" />
       <window_info id="Structure" order="1" sideWeight="0.503876" side_tool="true" weight="0.2265861" />
@@ -438,7 +538,7 @@
       <window_info id="Web" order="7" sideWeight="0.5031746" side_tool="true" weight="0.238653" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32840723" />
-      <window_info anchor="bottom" x="0" y="23" width="1366" height="715" id="Run" order="2" sideWeight="0.49946752" weight="0.3888889" />
+      <window_info anchor="bottom" x="0" y="23" width="1366" height="715" id="Run" order="2" sideWeight="0.49946752" weight="0.8063492" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -631,20 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Models/RecursoModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Models/ComentarioModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://ac11635e-f2ab-4c6b-ba15-7b86824241c1/schema/uchub/table/usuario_model">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -659,24 +745,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Controllers/RecursoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="69" column="73" selection-start-line="69" selection-start-column="73" selection-end-line="69" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/2.0.5.RELEASE/spring-boot-dependencies-2.0.5.RELEASE.pom">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2925">
           <caret line="2411" column="12" selection-start-line="2411" selection-start-column="12" selection-end-line="2411" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Repositories/RecursoRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -694,6 +766,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1761">
+          <caret line="68" column="25" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Repositories/RecursoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Repositories/RepositorioRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="87" selection-start-line="5" selection-start-column="87" selection-end-line="5" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0-sources.jar!/com/fasterxml/jackson/annotation/JsonManagedReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Controllers/RecursoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Models/RecursoModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Models/ComentarioModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="23" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Models/UsuarioModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -704,17 +828,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://ac11635e-f2ab-4c6b-ba15-7b86824241c1/schema/uchub/table/repositorio_model">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Controllers/UsuarioController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="-78">
           <caret line="50" column="91" selection-start-line="50" selection-start-column="91" selection-end-line="50" selection-end-column="91" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Models/RepositorioModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1761">
-          <caret line="68" column="25" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
+        <state relative-caret-position="305">
+          <caret line="71" column="19" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#634#635#0" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+            <element signature="e#989#990#0" expanded="true" />
+            <element signature="e#1035#1036#0" expanded="true" />
+            <element signature="e#1071#1072#0" expanded="true" />
+            <element signature="e#1103#1104#0" expanded="true" />
+            <element signature="e#1153#1154#0" expanded="true" />
+            <element signature="e#1195#1196#0" expanded="true" />
+            <element signature="e#1242#1243#0" expanded="true" />
+            <element signature="e#1273#1274#0" expanded="true" />
+            <element signature="e#1333#1334#0" expanded="true" />
+            <element signature="e#1373#1374#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/UCHub/Controllers/RepositorioController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
