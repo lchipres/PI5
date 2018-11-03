@@ -64,4 +64,13 @@ public class RepositorioController {
         return null;
     }
 
+    @DeleteMapping(path="/{id}")
+    public @ResponseBody Iterable<RepositorioModel> deleteRepository(@PathVariable String id){
+        Optional<RepositorioModel> repo = repositorioRepository.findById(Long.parseLong(id));
+
+        repo.ifPresent(repositorioModel -> repositorioRepository.delete(repositorioModel));
+
+        return repositorioRepository.findAll();
+    }
+
 }
