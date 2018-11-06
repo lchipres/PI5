@@ -1,6 +1,6 @@
 package UCHub.Repositories;
 
-import com.sun.xml.internal.bind.v2.model.core.ID;
+//import com.sun.xml.internal.bind.v2.model.core.ID;
 import org.springframework.data.repository.CrudRepository;
 
 import UCHub.Models.UsuarioModel;
@@ -11,6 +11,6 @@ import java.util.Optional;
 public interface UsuarioRepository extends CrudRepository<UsuarioModel, Long>{
     Optional<UsuarioModel> findByCuenta(long accountNumber);
 
-    boolean existsUsuarioModelById(ID primarKey);
+    boolean existsUsuarioModelById(long primarKey);
     boolean existsUsuarioModelByCuenta(long cuenta);
 }
