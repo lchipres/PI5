@@ -49,6 +49,12 @@ public class UsuarioController {
 //    POST a new Usuario
     @PostMapping(path="/")
     public @ResponseBody UsuarioModel addNewUsuario(@RequestBody Map<String, String> body){
+        Optional<UsuarioModel> u = usuarioRepository.findByCuenta(Long.parseLong(body.get("cuenta")));
+
+        // in case a user is already registered
+        if(u.isPresent())
+            return null;
+
         UsuarioModel newU = new UsuarioModel(Long.parseLong(body.get("cuenta")), body.get("name"), body.get("career"), body.get("email"),
                                             body.get("user"), body.get("password"), body.get("type"));
         usuarioRepository.save(newU);
