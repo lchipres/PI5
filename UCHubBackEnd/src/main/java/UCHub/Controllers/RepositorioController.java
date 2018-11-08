@@ -97,7 +97,7 @@ public class RepositorioController {
         return repositorioRepository.findAll();
     }
 
-    @PutMapping(path="/{id}")
+    @PutMapping(path="/{id}/edit")
     public @ResponseBody RepositorioModel editRepository(@PathVariable(value="id") Integer id,
                                                          @RequestBody Map<String, String> body){
         Optional<RepositorioModel> r = repositorioRepository.findById((long)id);
