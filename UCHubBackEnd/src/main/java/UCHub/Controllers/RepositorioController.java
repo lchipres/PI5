@@ -52,9 +52,9 @@ public class RepositorioController {
     }
 
     @PutMapping(path="/{id}")
-    public @ResponseBody RepositorioModel editRepository(@PathVariable(value="id") String id,
+    public @ResponseBody RepositorioModel editRepository(@PathVariable(value="id") Integer id,
                                                          @RequestBody Map<String, String> body){
-        Optional<RepositorioModel> r = repositorioRepository.findById(Long.parseLong(id));
+        Optional<RepositorioModel> r = repositorioRepository.findById((long)id);
         if(r.isPresent()){
             r.get().setDescripcion(body.get("descripcion"));
             r.get().setEtiquetas(body.get("etiquetas"));
