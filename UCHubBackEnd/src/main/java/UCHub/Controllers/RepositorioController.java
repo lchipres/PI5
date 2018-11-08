@@ -51,7 +51,7 @@ public class RepositorioController {
         return repo.orElse(null);
     }
 
-    @PutMapping(path="/{id}")
+    @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
     public @ResponseBody RepositorioModel editRepository(@PathVariable(value="id") Integer id,
                                                          @RequestBody Map<String, String> body){
         Optional<RepositorioModel> r = repositorioRepository.findById((long)id);
