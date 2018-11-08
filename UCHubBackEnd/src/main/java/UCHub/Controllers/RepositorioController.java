@@ -51,10 +51,10 @@ public class RepositorioController {
         return repo.orElse(null);
     }
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
-    public @ResponseBody RepositorioModel editRepository(@PathVariable(value="id") Integer id,
+    @RequestMapping(value = "/{repoid}", method = RequestMethod.PUT)
+    public @ResponseBody RepositorioModel editRepository(@PathVariable(value="id") Integer repoid,
                                                          @RequestBody Map<String, String> body){
-        Optional<RepositorioModel> r = repositorioRepository.findById((long)id);
+        Optional<RepositorioModel> r = repositorioRepository.findById((long)repoid);
         if(r.isPresent()){
             r.get().setDescripcion(body.get("descripcion"));
             r.get().setEtiquetas(body.get("etiquetas"));
