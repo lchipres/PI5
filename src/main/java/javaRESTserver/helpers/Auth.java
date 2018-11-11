@@ -1,7 +1,7 @@
-package UCHub.helpers;
+package javaRESTserver.helpers;
 
 // Models
-import UCHub.Models.*;
+import javaRESTserver.Models.*;
 
 public class Auth {
     public static Boolean authUser(UsuarioModel logged, UsuarioModel fromDB){

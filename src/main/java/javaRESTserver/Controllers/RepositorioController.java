@@ -1,11 +1,11 @@
-package UCHub.Controllers;
+package javaRESTserver.Controllers;
 
-import UCHub.Models.RecursoModel;
-import UCHub.Models.RepositorioModel;
-import UCHub.Models.UsuarioModel;
-import UCHub.Repositories.RecursoRepository;
-import UCHub.Repositories.RepositorioRepository;
-import UCHub.Repositories.UsuarioRepository;
+import javaRESTserver.Models.RecursoModel;
+import javaRESTserver.Models.RepositorioModel;
+import javaRESTserver.Models.UsuarioModel;
+import javaRESTserver.Repositories.RecursoRepository;
+import javaRESTserver.Repositories.RepositorioRepository;
+import javaRESTserver.Repositories.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;

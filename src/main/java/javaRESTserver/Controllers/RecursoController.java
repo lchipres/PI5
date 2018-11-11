@@ -1,19 +1,19 @@
-package UCHub.Controllers;
+package javaRESTserver.Controllers;
 
 import java.util.Map;
 import java.util.Optional;
 
-// import UCHub.Models.ComentarioModel;
-import UCHub.Models.ComentarioModel;
-import UCHub.Models.RecursoModel;
-import UCHub.Models.UsuarioModel;
+// import javaRESTserver.Models.ComentarioModel;
+import javaRESTserver.Models.ComentarioModel;
+import javaRESTserver.Models.RecursoModel;
+import javaRESTserver.Models.UsuarioModel;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 
-// UCHub.Models
-import UCHub.Repositories.*;
+// javaRESTserver.Models
+import javaRESTserver.Repositories.*;
 
 import javax.swing.text.html.Option;
 

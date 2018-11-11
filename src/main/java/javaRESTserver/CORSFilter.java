@@ -1,4 +1,4 @@
-package UCHub;
+package javaRESTserver;
 
 import org.springframework.web.filter.GenericFilterBean;
 import javax.servlet.*;

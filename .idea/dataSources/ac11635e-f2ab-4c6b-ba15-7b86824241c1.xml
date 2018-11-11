@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="uchub@localhost">
+<dataSource name="javaRESTserver@localhost">
   <database-model serializer="dbm" rdbms="MYSQL" format-version="4.11">
     <root id="1">
       <ServerVersion>5.5.5</ServerVersion>
@@ -14,7 +14,7 @@
     <schema id="3" parent="1" name="test">
       <Collation>latin1_swedish_ci</Collation>
     </schema>
-    <schema id="4" parent="1" name="uchub">
+    <schema id="4" parent="1" name="javaRESTserver">
       <Current>1</Current>
       <Visible>1</Visible>
       <Collation>latin1_swedish_ci</Collation>

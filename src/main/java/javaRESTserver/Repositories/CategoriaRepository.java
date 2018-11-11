@@ -1,6 +1,6 @@
-package UCHub.Repositories;
+package javaRESTserver.Repositories;
 
-import UCHub.Models.CategoriaModel;
+import javaRESTserver.Models.CategoriaModel;
 import org.springframework.data.repository.CrudRepository;
 
 public interface CategoriaRepository extends CrudRepository<CategoriaModel, Integer>{

@@ -1,6 +1,6 @@
-package UCHub.Repositories;
+package javaRESTserver.Repositories;
 
-import UCHub.Models.EtiquetaModel;
+import javaRESTserver.Models.EtiquetaModel;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 

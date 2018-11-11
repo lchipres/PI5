@@ -1,7 +1,7 @@
-package UCHub.Controllers;
+package javaRESTserver.Controllers;
 
-import UCHub.Models.EtiquetaModel;
-import UCHub.Repositories.EtiquetasRepository;
+import javaRESTserver.Models.EtiquetaModel;
+import javaRESTserver.Repositories.EtiquetasRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;

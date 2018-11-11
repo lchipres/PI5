@@ -1,4 +1,4 @@
-package UCHub.Models;
+package javaRESTserver.Models;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import org.springframework.data.annotation.CreatedDate;

@@ -1,4 +1,4 @@
-package UCHub.Models;
+package javaRESTserver.Models;
 
 
 import org.springframework.jmx.export.annotation.ManagedNotification;

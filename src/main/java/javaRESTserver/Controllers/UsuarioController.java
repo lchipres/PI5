@@ -1,16 +1,16 @@
-package UCHub.Controllers;
+package javaRESTserver.Controllers;
 
 import java.util.Map;
 import java.util.Optional;
 import java.util.Random;
 
-import UCHub.Models.UsuarioModel;
-import UCHub.helpers.Auth;
+import javaRESTserver.Models.UsuarioModel;
+import javaRESTserver.helpers.Auth;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
-import UCHub.Repositories.*;
+import javaRESTserver.Repositories.*;
 
 @Controller
 @RequestMapping(path="/usuarios")

@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>Equipo5</groupId>
-    <artifactId>UCHub</artifactId>
+    <artifactId>javaRESTserver</artifactId>
     <version>0.1.0</version>
 
     <parent>

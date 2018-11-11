@@ -1,4 +1,4 @@
-package UCHub.Models;
+package javaRESTserver.Models;
 
 import javax.persistence.*;
 import java.awt.*;

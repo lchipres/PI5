@@ -1,7 +1,7 @@
-package UCHub.Controllers;
+package javaRESTserver.Controllers;
 
-import UCHub.Models.CategoriaModel;
-import UCHub.Repositories.CategoriaRepository;
+import javaRESTserver.Models.CategoriaModel;
+import javaRESTserver.Repositories.CategoriaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

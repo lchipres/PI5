@@ -1,4 +1,4 @@
-package UCHub.Models;
+package javaRESTserver.Models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

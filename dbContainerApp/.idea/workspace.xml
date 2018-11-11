@@ -3,11 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a4cfa167-f5a6-4760-a915-f2892c39b989" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UCHubBackEnd/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UCHubBackEnd/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UCHubBackEnd/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UCHubBackEnd/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UCHubBackEnd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UCHubBackEnd/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UCHubBackEnd/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../UCHubBackEnd/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UCHubBackEnd/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../UCHubBackEnd/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaRESTserverBackEnd/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaRESTserverBackEnd/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaRESTserverBackEnd/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaRESTserverBackEnd/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaRESTserverBackEnd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaRESTserverBackEnd/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaRESTserverBackEnd/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../javaRESTserverBackEnd/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaRESTserverBackEnd/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../javaRESTserverBackEnd/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dbContainer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dbContainer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dbContainer/src/main/java/container/mysqlConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/dbContainer/src/main/java/container/mysqlConnector.java" afterDir="false" />
     </list>

@@ -1,8 +1,8 @@
-package UCHub.Repositories;
+package javaRESTserver.Repositories;
 
 import org.springframework.data.repository.CrudRepository;
 
-import UCHub.Models.RecursoModel;
+import javaRESTserver.Models.RecursoModel;
 
 import java.util.List;
 
