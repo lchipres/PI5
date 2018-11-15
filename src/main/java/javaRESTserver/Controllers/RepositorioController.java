@@ -91,20 +91,20 @@ public class RepositorioController {
         return repositorioRepository.findAll();
     }
 
-    @PutMapping(path="/{id}")
-    public @ResponseBody RepositorioModel updateRepository(@PathVariable String id, @RequestBody Map<String, String> body) {
+    @PutMapping(path = "/{id}")
+    public @ResponseBody RepositorioModel updateRepository(@PathVariable String id,
+            @RequestBody Map<String, String> body) {
         Optional<RepositorioModel> r = repositorioRepository.findById(Long.parseLong(id));
-        if(!r.isPresent())
+        if (!r.isPresent())
             return null;
-        
+
         r.get().setDescripcion(body.get("descripcion"));
         r.get().setEtiquetas(body.get("etiquetas"));
         r.get().setId(Long.parseLong(body.get("id")));
         r.get().setNombre(body.get("nombre"));
 
-        repositorioRepository.save(r.get())
-        return r;
-
+        repositorioRepository.save(r.get());
+        return r.get();
     }
 
 }
